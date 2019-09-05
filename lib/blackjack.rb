@@ -34,20 +34,20 @@ def hit?(number)
   num = number
   prompt_user
   uinput = get_user_input
-  loop do
+  
+    if uinput = 's'
+
+      return num
+    end
   if uinput == 'h'
     num += deal_card
 
-  elsif uinput = 's'
-
-    return num
-    break
   elsif uinput != 's' || uinput != 'h'
     invalid_command
     prompt_user
 
 
-end
+
   end
 end
 
